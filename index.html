@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Twitter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="bg-primary text-white text-center py-2">
         <h1>Mini Twitter</h1>
     </header>
-    <div class="container">
-        <div class="post">
-            <div class="user">
-                <img src="user-avatar.jpg" alt="User Avatar">
-                <span>@username</span>
+    <div class="container mt-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <img src="user-avatar.jpg" alt="User Avatar" class="rounded-circle mr-2" style="width: 40px;">
+                    <span>@username</span>
+                </div>
+                <p class="mt-2">This is a tweet! #hashtags</p>
             </div>
-            <p>This is a tweet! #hashtags</p>
         </div>
-        <!-- More posts here -->
+        <!-- More cards here -->
     </div>
-    <footer>
-        <textarea placeholder="Write a tweet..."></textarea>
-        <button>Post</button>
+    <footer class="bg-light p-3 fixed-bottom">
+        <textarea class="form-control mb-2" placeholder="Write a tweet..."></textarea>
+        <button class="btn btn-primary btn-block">Post</button>
     </footer>
 </body>
 </html>
